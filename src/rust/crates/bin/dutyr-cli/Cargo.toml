@@ -1,0 +1,23 @@
+[package]
+name = "dutyr-cli"
+version.workspace = true
+description = "CLI/client for Dutyr"
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+
+[package.metadata.wix]
+upgrade-guid = "BECDF072-C7D4-469A-8F07-0854816731F8"
+path-guid = "E38C552C-AA24-4ED6-BB58-E8F239DAF410"
+license = false
+eula = false
+
+[dependencies]
+dutyr-cli-migrators = { path = "../../lib/dutyr-cli-migrators", optional = true }
+dutyr-shared = { path = "../../lib/dutyr-shared" }
+dutyr-daemon-rpc = { path = "../../lib/dutyr-daemon-rpc" }
+clap.workspace = true

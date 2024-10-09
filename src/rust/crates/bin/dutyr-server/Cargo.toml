@@ -1,0 +1,25 @@
+[package]
+name = "dutyr-server"
+version.workspace = true
+description = "Synchronisation server + REST/GraphQL API for Dutyr"
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+
+[package.metadata.wix]
+upgrade-guid = "740524DC-340A-41CD-928B-6E12B9855015"
+path-guid = "E24D9D48-1CB6-4C0B-B27A-EF54FE0D49CC"
+license = false
+eula = false
+
+[dependencies]
+dutyr-server-auth = { path = "../../lib/dutyr-server-auth" }
+dutyr-server-storage-common = { path = "../../lib/dutyr-server-storage-common" }
+dutyr-server-storage-postgres = { path = "../../lib/dutyr-server-storage-postgres" }
+dutyr-web-server = { path = "../../lib/dutyr-web-server" } # FIXME: Add features.
+dutyr-shared = { path = "../../lib/dutyr-shared" }
+clap.workspace = true

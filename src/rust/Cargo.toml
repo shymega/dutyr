@@ -1,0 +1,60 @@
+[workspace]
+default-members = ["crates/bin/*", "crates/lib/*"]
+resolver = "2"
+members = [ "crates/bin/dutyr-cli", "crates/bin/dutyr-daemon", "crates/bin/dutyr-server", "crates/lib/dutyr-server-storage-common", "crates/lib/dutyr-web-client", "crates/lib/dutyr-shared", "crates/lib/dutyr-local-storage", "crates/lib/dutyr-server-storage-postgres", "crates/lib/dutyr-server-auth", "crates/lib/dutyr-cli-migrators", "crates/lib/dutyr-daemon-activities", "crates/lib/dutyr-daemon-rpc", "crates/lib/dutyr-web-server"]
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Dom Rodriguez <shymega@shymega.org.uk>"]
+description = "A modular, committable, and extensible task/todo/time tracker."
+edition = "2021"
+rust-version = "1.80"
+license = "GPL-2.0-or-later"
+repository = "https://github.com/shymega/dutyr"
+homepage = "https://github.com/shymega/dutycr"
+readme = "../../README.md"
+
+[workspace.dependencies]
+clap = { version = "4.5.20", features = ["derive"] }
+clap_complete = "4.5.8"
+config = { version = "0.14", default-features = false, features = ["toml"] }
+directories = "5.0.1"
+eyre = "0.6"
+fs-err = "2.11.0"
+futures = "0.3"
+log = "0.4"
+pretty_assertions = "1.4.1"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+thiserror = "1.0"
+time = { version = "0.3.36", features = ["local-offset", "macros", "serde-human-readable"] }
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"
+uuid = "1.10.0"
+whoami = "1.5.2"
+
+[workspace.dependencies.tracing-subscriber]
+version = "0.3"
+features = ["ansi", "fmt", "registry", "env-filter"]
+
+# Config for 'cargo dist'
+[workspace.metadata.dist]
+# The preferred cargo-dist version to use in CI (Cargo.toml SemVer syntax)
+cargo-dist-version = "0.22.1"
+# CI backends to support
+ci = "github"
+# The installers to generate for each app
+installers = ["shell", "powershell", "msi"]
+# Target platforms to build apps for (Rust target-triple syntax)
+targets = ["aarch64-apple-darwin", "x86_64-apple-darwin", "x86_64-unknown-linux-musl", "x86_64-pc-windows-msvc"]
+# Path that installers should place binaries in
+install-path = "CARGO_HOME"
+# Whether to install an updater program
+install-updater = true
+# Ignore out-of-date contents
+allow-dirty = ["ci"]
+
+# The profile that 'cargo dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"

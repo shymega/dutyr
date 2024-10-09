@@ -1,0 +1,34 @@
+version: 2
+updates:
+  - package-ecosystem: "cargo"
+    directory: "/src/rust"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore(cargo-deps)"
+    groups:
+      cargo-deps:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "pub"
+    directory: "/src/flutter"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore(pub-deps)"
+    groups:
+      dart-deps:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore(ci-deps)"
+    groups:
+      gh-actions-deps:
+        patterns:
+          - "*"

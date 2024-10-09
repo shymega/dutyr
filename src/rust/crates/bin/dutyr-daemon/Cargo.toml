@@ -1,0 +1,25 @@
+[package]
+name = "dutyr-daemon"
+version.workspace = true
+description = "User daemon for Dutyr"
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+
+[package.metadata.wix]
+upgrade-guid = "3ACE497D-3BD3-4376-A369-DBA3E29D4C24"
+path-guid = "973B8E57-105D-4436-8C1E-CB43B61A1DA3"
+license = false
+eula = false
+
+[dependencies]
+dutyr-daemon-activities = { path = "../../lib/dutyr-daemon-activities", optional = true }
+dutyr-shared = { path = "../../lib/dutyr-shared" }
+dutyr-local-storage = { path = "../../lib/dutyr-local-storage", optional = true }
+dutyr-web-client = { path = "../../lib/dutyr-web-client", optional = true }
+dutyr-daemon-rpc = { path = "../../lib/dutyr-daemon-rpc" }
+clap.workspace = true

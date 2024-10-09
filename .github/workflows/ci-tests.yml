@@ -1,0 +1,25 @@
+---
+name: CI Tests Workflow
+
+on:
+  push:
+    paths: ["src/rust", "src/flutter", "build-aux/nix", "flake.lock", "flake.nix", "devenv.*"]
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+#  test-macos:
+#    uses: ./.github/workflows/ci-tests-macos.yml
+#    secrets: inherit
+
+#  test-linux:
+#    uses: ./.github/workflows/ci-tests-linux.yml
+#    secrets: inherit
+
+#  test-windows:
+#    uses: ./.github/workflows/ci-tests-windows.yml
+#    secrets: inherit
+
+  test-nix:
+    uses: ./.github/workflows/ci-tests-nix.yml
+    secrets: inherit

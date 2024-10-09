@@ -1,0 +1,19 @@
+[package]
+name = "dutyr-server-storage-common"
+license.workspace = true
+description.workspace = true
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+readme.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+homepage.workspace = true
+
+[features]
+default = []
+
+[dependencies]
+eyre.workspace = true
+log.workspace = true
+thiserror.workspace = true
