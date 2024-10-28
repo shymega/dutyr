@@ -11,4 +11,4 @@ homepage.workspace = true
 readme.workspace = true
 
 [dependencies]
-tarpc = { version = "0.34.0", features = ["serde", "serde-transport", "serde-transport-json", "tcp", "tokio1"] }
+tarpc = { version = "0.35.0", features = ["serde", "serde-transport", "serde-transport-json", "tcp", "tokio1"] }
