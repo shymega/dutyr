@@ -11,7 +11,7 @@ edition = "2021"
 rust-version = "1.80"
 license = "GPL-2.0-or-later"
 repository = "https://github.com/shymega/dutyr"
-homepage = "https://github.com/shymega/dutycr"
+homepage = "https://github.com/shymega/dutyr"
 readme = "../../README.md"
 
 [workspace.dependencies]
