@@ -483,23 +483,14 @@ version = "0.1.0"
 dependencies = [
  "clap",
  "dutyr-server-auth",
- "dutyr-server-storage-common",
  "dutyr-server-storage-postgres",
  "dutyr-shared",
+ "dutyr-storage-common",
  "dutyr-web-server",
 ]
 
 [[package]]
 name = "dutyr-server-auth"
-version = "0.1.0"
-dependencies = [
- "eyre",
- "log",
- "thiserror",
-]
-
-[[package]]
-name = "dutyr-server-storage-common"
 version = "0.1.0"
 dependencies = [
  "eyre",
@@ -518,6 +509,15 @@ dependencies = [
 
 [[package]]
 name = "dutyr-shared"
+version = "0.1.0"
+dependencies = [
+ "eyre",
+ "log",
+ "thiserror",
+]
+
+[[package]]
+name = "dutyr-storage-common"
 version = "0.1.0"
 dependencies = [
  "eyre",
