@@ -4,6 +4,8 @@ updates:
     directory: "/src/rust"
     schedule:
       interval: "weekly"
+      time: "07:00"
+      timezone: "Europe/London"
     commit-message:
       prefix: "chore(cargo-deps)"
     groups:
@@ -15,6 +17,8 @@ updates:
     directory: "/src/flutter"
     schedule:
       interval: "weekly"
+      time: "07:00"
+      timezone: "Europe/London"
     commit-message:
       prefix: "chore(pub-deps)"
     groups:
@@ -26,6 +30,8 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+      time: "07:00"
+      timezone: "Europe/London"
     commit-message:
       prefix: "chore(ci-deps)"
     groups:
