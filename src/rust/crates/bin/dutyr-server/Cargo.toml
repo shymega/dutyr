@@ -18,7 +18,7 @@ eula = false
 
 [dependencies]
 dutyr-server-auth = { path = "../../lib/dutyr-server-auth" }
-dutyr-server-storage-common = { path = "../../lib/dutyr-server-storage-common" }
+dutyr-storage-common = { path = "../../lib/dutyr-storage-common" }
 dutyr-server-storage-postgres = { path = "../../lib/dutyr-server-storage-postgres" }
 dutyr-web-server = { path = "../../lib/dutyr-web-server" } # FIXME: Add features.
 dutyr-shared = { path = "../../lib/dutyr-shared" }

@@ -1,5 +1,5 @@
 [package]
-name = "dutyr-server-storage-common"
+name = "dutyr-storage-common"
 license.workspace = true
 description.workspace = true
 version.workspace = true

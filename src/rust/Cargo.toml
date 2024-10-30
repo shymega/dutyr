@@ -1,7 +1,7 @@
 [workspace]
 default-members = ["crates/bin/*", "crates/lib/*"]
 resolver = "2"
-members = [ "crates/bin/dutyr-cli", "crates/bin/dutyr-daemon", "crates/bin/dutyr-server", "crates/lib/dutyr-server-storage-common", "crates/lib/dutyr-web-client", "crates/lib/dutyr-shared", "crates/lib/dutyr-local-storage", "crates/lib/dutyr-server-storage-postgres", "crates/lib/dutyr-server-auth", "crates/lib/dutyr-cli-migrators", "crates/lib/dutyr-daemon-activities", "crates/lib/dutyr-daemon-rpc", "crates/lib/dutyr-web-server"]
+members = [ "crates/bin/dutyr-cli", "crates/bin/dutyr-daemon", "crates/bin/dutyr-server", "crates/lib/dutyr-storage-common", "crates/lib/dutyr-web-client", "crates/lib/dutyr-shared", "crates/lib/dutyr-local-storage", "crates/lib/dutyr-server-storage-postgres", "crates/lib/dutyr-server-auth", "crates/lib/dutyr-cli-migrators", "crates/lib/dutyr-daemon-activities", "crates/lib/dutyr-daemon-rpc", "crates/lib/dutyr-web-server"]
 
 [workspace.package]
 version = "0.1.0"
