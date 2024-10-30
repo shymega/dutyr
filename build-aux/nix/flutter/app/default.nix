@@ -9,7 +9,7 @@
 , targetFlutterPlatform ? "web"
 }:
 flutter322.buildFlutterApplication rec {
-  pname = "dutry-app-${targetFlutterPlatform}";
+  pname = "dutyr-app-${targetFlutterPlatform}";
   version = "unstable";
 
   # To build for the Web, use the targetFlutterPlatform argument.
