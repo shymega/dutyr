@@ -8,6 +8,8 @@ updates:
       timezone: "Europe/London"
     commit-message:
       prefix: "chore(cargo-deps)"
+    reviewers:
+      - "shymega"
     groups:
       cargo-deps:
         patterns:
@@ -21,6 +23,8 @@ updates:
       timezone: "Europe/London"
     commit-message:
       prefix: "chore(pub-deps)"
+    reviewers:
+      - "shymega"
     groups:
       dart-deps:
         patterns:
@@ -34,6 +38,8 @@ updates:
       timezone: "Europe/London"
     commit-message:
       prefix: "chore(ci-deps)"
+    reviewers:
+      - "shymega"
     groups:
       gh-actions-deps:
         patterns:
