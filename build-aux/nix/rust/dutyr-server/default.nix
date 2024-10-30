@@ -1,12 +1,7 @@
 { lib
 , rustPlatform
 , pkg-config
-, systemd
-, libxkbcommon
-, wayland
 , openssl
-, xorg
-, libei
 }:
 let
   pname = "dutyr-server";
@@ -25,19 +20,8 @@ rustPlatform.buildRustPackage {
   buildAndTestSubdir = "./crates/bin/dutyr-server";
 
   buildInputs = [
-    libei
-    libxkbcommon
-    systemd.dev
-    wayland
     openssl.dev
-    xorg.libX11
-    xorg.libXtst
   ];
-
-  postFixup = ''
-    patchelf $out/bin/dutyr-server \
-      --add-rpath ${lib.makeLibraryPath [ libxkbcommon wayland xorg.libX11 xorg.libXtst libei ]}
-  '';
 
   meta = with lib; {
     description = "";
