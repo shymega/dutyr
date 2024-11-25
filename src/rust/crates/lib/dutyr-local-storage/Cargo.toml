@@ -14,7 +14,7 @@ readme.workspace = true
 default = []
 
 [dependencies]
-diesel = { version = "2.2.4", features = ["sqlite", "uuid"] }
+diesel = { version = "2.2.5", features = ["sqlite", "uuid"] }
 directories.workspace = true
 eyre.workspace = true
 fs-err.workspace = true
