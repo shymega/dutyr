@@ -25,12 +25,12 @@ futures = "0.3"
 log = "0.4"
 pretty_assertions = "1.4.1"
 serde = { version = "1.0.217", features = ["derive"] }
-serde_json = "1.0.135"
+serde_json = "1.0.137"
 thiserror = "1.0"
 time = { version = "0.3.37", features = ["local-offset", "macros", "serde-human-readable"] }
 tokio = { version = "1", features = ["full"] }
 tracing = "0.1"
-uuid = "1.11.1"
+uuid = "1.12.0"
 whoami = "1.5.2"
 
 [workspace.dependencies.tracing-subscriber]
