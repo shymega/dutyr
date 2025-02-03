@@ -331,9 +331,9 @@ dependencies = [
 
 [[package]]
 name = "diesel"
-version = "2.2.6"
+version = "2.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ccf1bedf64cdb9643204a36dd15b19a6ce8e7aa7f7b105868e9f1fad5ffa7d12"
+checksum = "04001f23ba8843dc315804fa324000376084dfb1c30794ff68dd279e6e5696d5"
 dependencies = [
  "diesel_derives",
  "libsqlite3-sys",
@@ -1678,9 +1678,9 @@ dependencies = [
 
 [[package]]
 name = "serde_json"
-version = "1.0.137"
+version = "1.0.138"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "930cfb6e6abf99298aaad7d29abbef7a9999a9a8806a40088f55f0dcec03146b"
+checksum = "d434192e7da787e94a6ea7e9670b26a036d0ca41e0b7efb2676dd32bae872949"
 dependencies = [
  "itoa",
  "memchr",
