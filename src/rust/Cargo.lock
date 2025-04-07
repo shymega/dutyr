@@ -169,9 +169,9 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "clap"
-version = "4.5.34"
+version = "4.5.35"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e958897981290da2a852763fe9cdb89cd36977a5d729023127095fa94d95e2ff"
+checksum = "d8aa86934b44c19c50f87cc2790e19f54f7a67aedb64101c2e1a2e5ecfb73944"
 dependencies = [
  "clap_builder",
  "clap_derive",
@@ -179,9 +179,9 @@ dependencies = [
 
 [[package]]
 name = "clap_builder"
-version = "4.5.34"
+version = "4.5.35"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "83b0f35019843db2160b5bb19ae09b4e6411ac33fc6a712003c33e03090e2489"
+checksum = "2414dbb2dd0695280da6ea9261e327479e9d37b0630f6b53ba2a11c60c679fd9"
 dependencies = [
  "anstream",
  "anstyle",
@@ -241,7 +241,7 @@ dependencies = [
  "serde",
  "serde_json",
  "static_assertions",
- "thiserror 1.0.65",
+ "thiserror 1.0.69",
 ]
 
 [[package]]
@@ -258,7 +258,7 @@ dependencies = [
  "quote",
  "strsim 0.10.0",
  "syn",
- "thiserror 1.0.65",
+ "thiserror 1.0.69",
 ]
 
 [[package]]
@@ -331,9 +331,9 @@ dependencies = [
 
 [[package]]
 name = "diesel"
-version = "2.2.8"
+version = "2.2.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "470eb10efc8646313634c99bb1593f402a6434cbd86e266770c6e39219adb86a"
+checksum = "34d3950690ba3a6910126162b47e775e203006d4242a15de912bec6c0a695153"
 dependencies = [
  "diesel_derives",
  "libsqlite3-sys",
@@ -453,7 +453,7 @@ dependencies = [
  "pretty_assertions",
  "serde",
  "serde_json",
- "thiserror 1.0.65",
+ "thiserror 2.0.12",
  "time",
  "uuid",
 ]
@@ -476,7 +476,7 @@ version = "0.1.0"
 dependencies = [
  "eyre",
  "log",
- "thiserror 1.0.65",
+ "thiserror 2.0.12",
 ]
 
 [[package]]
@@ -485,7 +485,7 @@ version = "0.1.0"
 dependencies = [
  "eyre",
  "log",
- "thiserror 1.0.65",
+ "thiserror 2.0.12",
 ]
 
 [[package]]
@@ -494,7 +494,7 @@ version = "0.1.0"
 dependencies = [
  "eyre",
  "log",
- "thiserror 1.0.65",
+ "thiserror 2.0.12",
 ]
 
 [[package]]
@@ -503,7 +503,7 @@ version = "0.1.0"
 dependencies = [
  "eyre",
  "log",
- "thiserror 1.0.65",
+ "thiserror 2.0.12",
 ]
 
 [[package]]
@@ -520,7 +520,7 @@ version = "0.1.0"
 dependencies = [
  "eyre",
  "log",
- "thiserror 1.0.65",
+ "thiserror 2.0.12",
 ]
 
 [[package]]
@@ -1199,7 +1199,7 @@ dependencies = [
  "js-sys",
  "once_cell",
  "pin-project-lite",
- "thiserror 1.0.65",
+ "thiserror 1.0.69",
 ]
 
 [[package]]
@@ -1222,7 +1222,7 @@ dependencies = [
  "opentelemetry",
  "percent-encoding",
  "rand",
- "thiserror 1.0.65",
+ "thiserror 1.0.69",
 ]
 
 [[package]]
@@ -1360,7 +1360,7 @@ dependencies = [
  "rustc-hash",
  "rustls",
  "socket2",
- "thiserror 1.0.65",
+ "thiserror 1.0.69",
  "tokio",
  "tracing",
 ]
@@ -1377,7 +1377,7 @@ dependencies = [
  "rustc-hash",
  "rustls",
  "slab",
- "thiserror 1.0.65",
+ "thiserror 1.0.69",
  "tinyvec",
  "tracing",
 ]
@@ -1442,7 +1442,7 @@ checksum = "ba009ff324d1fc1b900bd1fdb31564febe58a8ccc8a6fdbb93b543d33b13ca43"
 dependencies = [
  "getrandom",
  "libredox",
- "thiserror 1.0.65",
+ "thiserror 1.0.69",
 ]
 
 [[package]]
@@ -1863,11 +1863,11 @@ dependencies = [
 
 [[package]]
 name = "thiserror"
-version = "1.0.65"
+version = "1.0.69"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5d11abd9594d9b38965ef50805c5e469ca9cc6f197f883f717e0269a3057b3d5"
+checksum = "b6aaf5339b578ea85b50e080feb250a3e8ae8cfcdff9a461c9ec2904bc923f52"
 dependencies = [
- "thiserror-impl 1.0.65",
+ "thiserror-impl 1.0.69",
 ]
 
 [[package]]
@@ -1881,9 +1881,9 @@ dependencies = [
 
 [[package]]
 name = "thiserror-impl"
-version = "1.0.65"
+version = "1.0.69"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae71770322cbd277e69d762a16c444af02aa0575ac0d174f0b9562d3b37f8602"
+checksum = "4fee6c4efc90059e10f81e6d42c60a18f76588c3d74cb83a0b242a2b6c7504c1"
 dependencies = [
  "proc-macro2",
  "quote",
