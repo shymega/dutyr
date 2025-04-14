@@ -15,7 +15,7 @@ homepage = "https://github.com/shymega/dutyr"
 readme = "../../README.md"
 
 [workspace.dependencies]
-clap = { version = "4.5.35", features = ["derive"] }
+clap = { version = "4.5.36", features = ["derive"] }
 clap_complete = "4.5.8"
 config = { version = "0.14", default-features = false, features = ["toml"] }
 directories = "5.0.1"
