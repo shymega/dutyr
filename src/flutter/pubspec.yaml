@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   rust_lib_dutyr_app:
     path: rust_builder
-  flutter_rust_bridge: 2.9.0
+  flutter_rust_bridge: 2.10.0
   collection: ^1.19.1
 
 dev_dependencies:
