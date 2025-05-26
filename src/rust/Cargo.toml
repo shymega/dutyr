@@ -30,7 +30,7 @@ thiserror = "2.0"
 time = { version = "0.3.41", features = ["local-offset", "macros", "serde-human-readable"] }
 tokio = { version = "1", features = ["full"] }
 tracing = "0.1"
-uuid = "1.16.0"
+uuid = "1.17.0"
 whoami = "1.5.2"
 
 [workspace.dependencies.tracing-subscriber]
