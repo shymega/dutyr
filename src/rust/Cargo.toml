@@ -15,7 +15,7 @@ homepage = "https://github.com/shymega/dutyr"
 readme = "../../README.md"
 
 [workspace.dependencies]
-clap = { version = "4.5.43", features = ["derive"] }
+clap = { version = "4.5.45", features = ["derive"] }
 clap_complete = "4.5.8"
 config = { version = "0.14", default-features = false, features = ["toml"] }
 directories = "5.0.1"
@@ -30,7 +30,7 @@ thiserror = "2.0"
 time = { version = "0.3.41", features = ["local-offset", "macros", "serde-human-readable"] }
 tokio = { version = "1", features = ["full"] }
 tracing = "0.1"
-uuid = "1.17.0"
+uuid = "1.18.0"
 whoami = "1.5.2"
 
 [workspace.dependencies.tracing-subscriber]
