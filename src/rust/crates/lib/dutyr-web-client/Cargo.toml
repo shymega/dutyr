@@ -12,4 +12,4 @@ readme.workspace = true
 
 [dependencies]
 cynic = { version = "3.11.0", features = ["http-reqwest"] }
-reqwest = { version = "0.12.22", features = ["json", "rustls-tls-native-roots"] }
+reqwest = { version = "0.12.23", features = ["json", "rustls-tls-native-roots"] }
